@@ -35,3 +35,29 @@
 33. `sudo nano provision.sh` - create a shell file
 34. `sudo chmod +x provision.sh` - change permissions
 35. `Sudo ./provision.sh` - run the script
+
+## Creating variables in Linux
+
+36. `printenv` - Prints all the environmental variables
+
+37. `env` - Shows all current variables and their values
+
+38. `Printenv variable_name` - Prints the value of the variable
+
+39. `echo $variable_name` - Prints the value of specified variable
+
+40. `export VARIABLE=value` - creates a new environmental variable with a specified value
+
+41. `source .bashrc` - refreshes the .bashrc to show any updated changes
+
+In order to store variables in the environement so you can access it next time, you have to add them to the .bashrc script. The steps to do this are below:
+
+- Open the script with a nano command which is nano .bashrc
+
+- Scroll to the bottom and add your new code there. Make sure to not touch any of the codes already there
+
+- Now type in export Variable=value - this is to create an environmental variable which will be added to this script
+
+- Now use printenv Variable to see if there was a change. You'll see that it has not and that's because it needs to be refreshed
+
+- Use source .bashrc - this will show the updated .bashrc with your new added variable
